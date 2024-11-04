@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #3b91ce;
+    background: url('clear.jpg') no-repeat center center fixed;
+    background-size: cover;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background: url('clearatiy.jpg') no-repeat center center;
+    background-size: cover;
+    color: rgb(29, 58, 90);
+    text-align: center;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1.5s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+header h1 {
+    font-size: 3.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.5em;
+    font-weight: 300;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #05678e;
+    padding: 15px;
+    animation: slideIn 1s;
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-100%); }
+    to { transform: translateY(0); }
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: rgb(98, 160, 190);
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.left-sidebar, .right-sidebar {
+    width: 20%;
+    background-color: rgba(48, 85, 109, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.left-sidebar h3, .right-sidebar h3 {
+    
+    color: #37b2df;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.right-sidebar {
+    text-align: center;
+}
+
+.newspaper-image {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+
+.content {
+    width: 55%;
+    margin: 10px;
+}
+
+.feature-image {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+
+footer {
+    background-color: #077da8;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 1em;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Campaign Section */
+.campaign {
+    background-color: rgba(1, 89, 105, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 30px auto;
+    max-width: 700px;
+}
+
+.campaign h2 {
+    font-size: 2.5em;
+    color: #007fad;
+    margin-bottom: 15px;
+}
+
+.campaign p {
+    font-size: 1.2em;
+    color: #6f99c1;
+    margin-bottom: 20px;
+}
+
+.join-button, .donate-button, .confirm-donate {
+    background-color: #007fad;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 5px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.join-button:hover, .donate-button:hover, .confirm-donate:hover {
+    background-color: #005f7f;
+}
+
+.donation-options {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.donate-input {
+    padding: 10px;
+    font-size: 1em;
+    width: 200px;
+    margin-top: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+/* General paragraph styling */
+p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #2e9be9; /* Darker shade for readability */
+    font-weight: 400;
+    margin: 15px 0;
+    text-align: justify; /* Aligns text neatly for easy readability */
+}
+
+/* Specific sections styling */
+#introduction p, #scarcity p, #conservation p, #campaigns p, .campaign p {
+    font-size: 1.2em;
+    font-weight: 500;
+    color: #38a5f8; /* Slightly darker shade for emphasis */
+}
+
+/* Campaign and sidebar paragraph styling for a cohesive look */
+.campaign p, .left-sidebar p, .right-sidebar p {
+    font-size: 1.15em;
+    color: #1c98eb;
+    font-style: italic;
+}
+
+/* Heading styles */
+h2 {
+    font-size: 2em;
+    color: #007fad;
+    margin-top: 20px;
+}
+
+h3 {
+    font-size: 1.6em;
+    color: #37b2df;
+    margin-bottom: 10px;
+}
+.a{color: #39576c;}
